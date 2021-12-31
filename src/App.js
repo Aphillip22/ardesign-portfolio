@@ -8,9 +8,9 @@ function App() {
   const [categories] = useState([
     {
       name: 'portfolio',
-      description: 'Projects completed',
+      description: 'Sample of projects completed by Amber',
     },
-    { name: 'resume', description: 'Tools and technologies that I am experienced and skilled in using' }
+    { name: 'resume', description: 'Downloadable CV', }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
