@@ -3,7 +3,7 @@ import coverImage from "../../assets/images/cover-img.jpg";
 
 function About() {
     return (
-        <section className="my-5 flex-row" class="intro">
+        <section className="my-5 flex-row">
             <div className="hero-art">
                 <p>splash of</p>
                 <h2>artist</h2>

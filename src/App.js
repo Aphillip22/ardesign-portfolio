@@ -28,8 +28,8 @@ function App() {
       <main>
         {!contactSelected ? (
         <>
-          <About></About>
           <Resume currentCategory={currentCategory}></Resume>
+          <About></About>
         </>
         ) : (
           <ContactForm></ContactForm>
