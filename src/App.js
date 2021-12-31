@@ -27,9 +27,9 @@ function App() {
       ></Nav>
       <main>
         {!contactSelected ? (
-          <>
-          <Resume currentCategory={currentCategory}></Resume>
+        <>
           <About></About>
+          <Resume currentCategory={currentCategory}></Resume>
         </>
         ) : (
           <ContactForm></ContactForm>

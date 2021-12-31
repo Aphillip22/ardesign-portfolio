@@ -35,11 +35,12 @@ function ContactForm() {
     
     // JSX
     return (
-        <section>
-          <img src={contactImage} className="my-2" style={{ width: "100%" }} alt="contact" />
-          <h1>Contact</h1>
-          <form id="contact-form" onSubmit={handleSubmit}>
+        <section class="flex-row">
+        <img src={contactImage} className="my-2" style={{ width: "30%" }} alt="contact" />
+          
+          <form id="contact-form" class="d-flex justify-content-center" onSubmit={handleSubmit}>
           <div>
+            <h1>Contact</h1>
             <label htmlFor="name">Name:</label>
             <input type="text" defaultValue={name} onChange={handleChange} name="name" />
           </div>

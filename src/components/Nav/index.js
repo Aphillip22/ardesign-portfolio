@@ -1,48 +1,60 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../assets/utils/helpers';
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../assets/utils/helpers";
+import logoImage from "../../assets/images/wht-logo.svg";
 
 function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
-        contactSelected,
-        setContactSelected
-    } = props;
-  
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+    contactSelected,
+    setContactSelected,
+  } = props;
+
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="logo"></span>AR Design
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
+    <header>
+      <nav className="flex-row">
+        <img
+          src={logoImage}
+          className="my-2 mx-2"
+          style={{ width: "12%" }}
+          alt="cover"
+        ></img>
+        <ul>
+          <a data-testid="link" href="/">
+            Amber Phillips
+          </a>
           <li className="mx-2">
-          <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About Me
+            <a
+              data-testid="about"
+              href="#about"
+              onClick={() => setContactSelected(false)}
+            >
+              About
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-          <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
           {categories.map((category) => (
             <li
-            className={`mx-1 ${
-              currentCategory.name === category.name && !contactSelected && `navActive`
+              className={`mx-2 ${
+                currentCategory.name === category.name &&
+                !contactSelected &&
+                `navActive`
               }`}
-            key={category.name}
-          >
-              <span onClick={() => {
-                    setCurrentCategory(category);
-                    setContactSelected(false);
+              key={category.name}
+            >
+              <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                  setContactSelected(false);
                 }}
-                >
+              >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>

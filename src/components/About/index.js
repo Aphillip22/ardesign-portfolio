@@ -3,17 +3,17 @@ import coverImage from "../../assets/images/cover-img.jpg";
 
 function About() {
     return (
-        <section className="my-5" class="intro d-flex align-items-start">
-            <div class="hero-img">
-                <img src={coverImage} className="my-2" style={{ width: "40%" }} alt="cover" />
-            </div>
-            <div class="hero-art">
+        <section className="my-5 flex-row" class="intro">
+            <div className="hero-art">
                 <p>splash of</p>
                 <h2>artist</h2>
             </div>
-            <div class="hero-code">
+            <div className="hero-code">
                 <p>hint of</p>
                 <h2>⪡coder⪢</h2>
+            </div>
+            <div className="hero-img">
+                <img src={coverImage} className="my-2" style={{ width: "40%" }} alt="cover" />
             </div>
             <div>
                 <h1 id="about">About Amber</h1>

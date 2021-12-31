@@ -8,7 +8,7 @@ const Modal = ({ onClose, currentPhoto }) => {
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
         <img
-          src={require(`../../assets/images/gallery/${category}/${index}.jpg`).default}
+          src={require(`../../assets/images/gallery/${category}/${index}.png`).default}
           alt="current category"
         />
         <p>{description}</p>
