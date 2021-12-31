@@ -105,25 +105,28 @@ a {
   font-weight: bold;
 }
 /* Hero Style Start */
+.hero {
+  display:flex;
+  align-items:center;
+  justify-content:stretch;
+}
 .hero-art {
-  width: 20%;
+  width: 25%;
   margin: 3.5%;
-  color: #fff;
   font-size: 18px;
   line-height: 1.2;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-self: stretch;
 }
 .hero-art h2 {
   font-style: italic;
   font-size: 80px;
-  color: var(--primary-color);
+  color: #36b3c9;
 }
 .hero-art h2:hover {
   color: var(--accent-color);
   font-weight: bolder;
-  transform: translateX(10px) scale(1.2);
+  transform: translateY(10px) scale(1.2);
   transition-timing-function: ease-in-out;
 }
 .hero-art p {
@@ -134,11 +137,11 @@ a {
 .hero-art p:hover {
   color: var(--accent-color);
   font-weight: bolder;
-  transform: translateX(10px) scale(1.2);
+  transform: translateY(10px) scale(1.2);
   transition-timing-function: ease-in;
 }
 .hero-code {
-  width: 20%;
+  width: 25%;
   text-align: left;
   margin: 3.5%;
   color: #fff;
@@ -147,11 +150,12 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
+  align-items: center;
 }
 .hero-code h2 {
   font-style: italic;
   font-size: 90px;
-  color: var(--primary-color);
+  color: #36b3c9;
 }
 .hero-code h2:hover {
   color: var(--accent-color);
@@ -174,6 +178,9 @@ a {
 .hero-img {
   flex-direction: row;
   flex-wrap: wrap;
+}
+.hero-about {
+  width: 70%
 }
 /* Hero Style End */
 /* Apply styles to header */
@@ -209,6 +216,18 @@ header nav ul {
 }
 header nav ul li, header nav a {
   padding: 10px 15px;
+}
+header nav ul li:hover {
+  color: var(--accent-color);
+  font-weight: bolder;
+  transform: translateX(10px) scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+header nav a:hover {
+  color: var(--accent-color);
+  font-weight: bolder;
+  transform: translateX(10px) scale(1.2);
+  transition-timing-function: ease-in-out;
 }
 /* End header styles */
 button {

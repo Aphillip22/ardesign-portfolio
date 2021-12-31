@@ -26,19 +26,19 @@ const PhotoList = ({ category }) => {
     },
     {
         name: 'Front-End',
-        category: 'technologies',
+        category: 'resume',
         description:
           'HTML/CSS/JS, Bootstrap, Normalize, Bulma, client-side API integration, React, Websockets'
     },
     {
         name: 'Back-End',
-        category: 'technologies',
+        category: 'resume',
         description:
           'Node.js, Express.js, SQL, Sequelize, bcrypt, server-side API, database creation & management'
     },
     {
         name: 'MERN Stack',
-        category: 'technologies',
+        category: 'resume',
         description:
           'MongoDB/Mongoose, GraphQl, Postgres, React, Node.js, JSX, JWT'
     }
@@ -59,7 +59,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
-            src={require(`../../assets/images/gallery/${category}/${i}.png`).default}
+            src={require(`../../assets/images/gallery/${category}/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
