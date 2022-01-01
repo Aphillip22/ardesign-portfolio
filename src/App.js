@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Resume from './components/Resume';
 import ContactForm from './components/Contact';
+import Hero from './components/Hero';
 
 function App() {
   const [categories] = useState([
@@ -28,6 +29,7 @@ function App() {
       <main>
         {!contactSelected ? (
         <>
+          <Hero></Hero>
           <Resume currentCategory={currentCategory}></Resume>
           <About></About>
         </>

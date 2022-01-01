@@ -5,10 +5,10 @@ const Modal = ({ onClose, currentPhoto }) => {
 
   return (
     <div className="modalBackdrop">
-      <div className="modalContainer">
-        <h3 className="modalTitle">{name} </h3>
+      <div className="modalContainer flex-row">
+      <h3 className="modalTitle">{name} </h3>
         <img
-          src={require(`../../assets/images/gallery/${category}/${index}.png`)}
+          src={require(`../../assets/images/gallery/${category}/small/${index}.png`)}
           alt="current category"
         />
         <p>{description}</p>
