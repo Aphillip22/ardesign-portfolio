@@ -9,11 +9,11 @@ function Hero() {
             </div>
             <div className="hero-art">
                 <p>splash of</p>
-                <h2><a href="#artwork"><span>&#60;artist&#62;</span></a></h2>
+                <h2><span>&#60;artist&#62;</span></h2>
             </div>
             <div className="hero-code">
                 <p>hint of</p>
-                <h2><a href="#portfolio"><span>&#60;coder/&#62;</span></a></h2>
+                <h2><span>&#60;coder/&#62;</span></h2>
             </div>
         </section>
     );
