@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Northwell';
-  src: local('Northwell'), url(./fonts/Northwell.otf) format('opentype');
+  src: local('Northwell'), url(./assets/fonts/Northwell.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'Artifex';
-  src: local('Artifex'), url(./fonts/Artifex.otf) format('opentype');
+  src: local('Artifex'), url(./assets/fonts/Artifex.otf) format('opentype');
 }
 
 body {

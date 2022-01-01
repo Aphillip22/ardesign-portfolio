@@ -1,9 +1,13 @@
 import React from 'react';
 import logoImage from "../../assets/images/clr-logo.svg";
+import aboutImage from "../../assets/images/about-img.jpg";
 
 function About() {
     return (
         <section className="my-5 flex-row hero">
+            <div className="hero-img" style={{ width: "50%" }}>
+                <img src={aboutImage} className="my-2" style={{ width: "100%" }} alt="about" />
+            </div>
             <div className="hero-about">
                 <h1 id="about">About Amber</h1>
                 <p>
@@ -16,7 +20,7 @@ function About() {
                 </p>
             </div>
             <div className="hero-img" style={{ width: "30%" }}>
-                <img src={logoImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+                <img src={logoImage} className="my-2" style={{ width: "100%" }} alt="logo" />
             </div>
         </section>
     );
