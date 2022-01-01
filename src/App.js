@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Hero from './components/Hero';
 
@@ -11,7 +11,7 @@ function App() {
       name: 'portfolio',
       description: 'Sample of projects completed by Amber',
     },
-    { name: 'resume', description: 'Downloadable CV', }
+    { name: 'artwork', description: 'Sample of mixed media artwork projects by Amber', }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -30,7 +30,7 @@ function App() {
         {!contactSelected ? (
         <>
           <Hero></Hero>
-          <Resume currentCategory={currentCategory}></Resume>
+          <Portfolio currentCategory={currentCategory}></Portfolio>
           <About></About>
         </>
         ) : (
