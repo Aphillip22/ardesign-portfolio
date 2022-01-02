@@ -112,10 +112,11 @@ a {
   display:flex;
   align-items:center;
   justify-content:stretch;
+  margin: auto;
 }
 .hero-art {
   width: 25%;
-  margin: 3.5%;
+  margin: 5%;
   font-size: 18px;
   line-height: 1.2;
   flex-direction: row;
@@ -178,9 +179,13 @@ a {
   transform: translateY(10px) scale(1.2);
   transition-timing-function: ease-in-out;
 }
-.hero-img {
+.hero-img img {
   flex-direction: row;
   flex-wrap: wrap;
+  border-radius: 20px;
+}
+.about-images img {
+  border-radius: 20px;
 }
 .hero-about {
   width: 70%
@@ -188,7 +193,7 @@ a {
 /* Hero Style End */
 /* Apply styles to header */
 header {
-  background: var(--dark);
+  background-color:rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -202,6 +207,7 @@ header {
   font-weight: lighter;
   text-decoration: none;
   cursor: pointer;
+  height: 10%;
 }
 header a {
   color: var(--tertiary);
@@ -452,18 +458,37 @@ a {
 }
 /* Footer style start */
 footer {
-  height: 50px;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: right;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 footer h3 {
   width: 40%;
+  align-self: center;
+  justify-items: right;
 }
 footer i {
   color: var(--primary);
+  align-self: center;
+  width: 2%;
+  margin-left: 50px;
 }
 .fa-icon {
   font-size: 40px;
   color: var(--accent-color);
+  justify-self: center;
+  justify-items: right;
+  padding-right: 20px;
 }
 /* Footer end */
+.accent-word {
+  color:var(--primary);
+}

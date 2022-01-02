@@ -17,13 +17,13 @@ function Nav(props) {
 
   return (
     <header>
-      <nav className="flex-row">
-        <img
+      <img
           src={logoImage}
           className="my-2 mx-2"
-          style={{ width: "8%" }}
+          style={{ width: "10%" }}
           alt="cover"
         ></img>
+      <nav className="flex-row" style={{ justifyContent: 'flex-end' }}>
         <ul>
           <a data-testid="link" href="/">
             Amber Phillips

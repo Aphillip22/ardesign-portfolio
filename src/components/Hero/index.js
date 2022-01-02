@@ -3,7 +3,7 @@ import coverImage from "../../assets/images/cover-img.jpg";
 
 function Hero() {
     return (
-        <section className="my-5 flex-row hero">
+        <section className="flex-row hero">
             <div className="hero-img" style={{ width: "30%" }}>
                 <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
             </div>
