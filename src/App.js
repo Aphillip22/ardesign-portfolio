@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Hero from './components/Hero';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   const [categories] = useState([
@@ -39,6 +40,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
+      <Footer></Footer>
     </div>
   );
 }

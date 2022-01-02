@@ -431,3 +431,23 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 }
+/* Footer style start */
+footer {
+  height: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer h3 {
+  width: 40%;
+}
+footer i {
+  color: var(--primary);
+}
+.fa-icon {
+  font-size: 40px;
+  color: var(--accent-color);
+}
+.fa-icon-2 {
+  font-size: 40px;
+  color: var(--primary);
+}
