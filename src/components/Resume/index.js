@@ -4,8 +4,8 @@ import pdfFile from "../../assets/docs/ARDesignResume.pdf";
 export default function Resume() {
   return (
     <section>
-    <div className="Resume">
-      <header>
+    <div>
+      <header className="resume" id="resume">
         <h1>Resume</h1>
       </header>
       <div className="mx-2">

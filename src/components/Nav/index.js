@@ -48,7 +48,7 @@ function Nav(props) {
                 `navActive`
               }`}
               key={category.name}
-            >
+            ><a href={`#${category.name}`}>
               <span
                 onClick={() => {
                   setCurrentCategory(category);
@@ -57,8 +57,18 @@ function Nav(props) {
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
+              </a>
             </li>
           ))}
+          <li className="mx-2">
+            <a
+              data-testid="resume"
+              href="#resume"
+              onClick={() => setContactSelected(false)}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
