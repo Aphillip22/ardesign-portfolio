@@ -21,7 +21,7 @@ function Nav(props) {
         <img
           src={logoImage}
           className="my-2 mx-2"
-          style={{ width: "12%" }}
+          style={{ width: "8%" }}
           alt="cover"
         ></img>
         <ul>

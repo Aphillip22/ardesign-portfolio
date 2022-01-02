@@ -6,10 +6,13 @@ export default function Resume() {
     <section>
     <div>
       <header className="resume" id="resume">
-        <h1>Resume</h1>
+        <h1 className="flex-row">Resume</h1>
       </header>
-      <div className="mx-2">
-        <div className="flex-row">
+      <a href={pdfFile} download="ARDesignResume.pdf">
+          <button type="button">Download my Resume</button>
+        </a>
+      <div className="mx-2 flex-row resume-container">
+        <div className="flex-column resume-card">
           <h3>Front-End</h3>
           <ul>
             <li>HTML/CSS</li>
@@ -22,7 +25,7 @@ export default function Resume() {
             <li>API Integration</li>
           </ul>
         </div>
-        <div className="flex-row">
+        <div className="flex-column resume-card">
           <h3>Back-End</h3>
           <ul>
             <li>API Creation</li>
@@ -34,7 +37,7 @@ export default function Resume() {
             <li>Service Workers</li>
           </ul>
         </div>
-        <div className="flex-row">
+        <div className="flex-column resume-card">
           <h3>Database</h3>
           <ul>
             <li>MySQL</li>
@@ -46,7 +49,7 @@ export default function Resume() {
             <li>PostgreSQL</li>
           </ul>
         </div>
-        <div className="flex-row">
+        <div className="flex-column resume-card">
         <h3>Production</h3>
         <ul>
           <li>Heroku</li>
@@ -58,11 +61,6 @@ export default function Resume() {
         </ul>
       </div>
     </div>
-      <div className="flex-row">
-        <a href={pdfFile} download="ARDesignResume.pdf">
-          <button type="button">Download my Resume</button>
-        </a>
-      </div>
     </div>
     </section>
   );

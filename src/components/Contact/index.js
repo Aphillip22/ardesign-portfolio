@@ -35,7 +35,7 @@ function ContactForm() {
     
     // JSX
     return (
-        <section class="flex-row">
+        <section class="flex-row" id="contact">
         <img src={contactImage} className="my-2" style={{ width: "30%" }} alt="contact" />
           
           <form id="contact-form" class="d-flex justify-content-center" onSubmit={handleSubmit}>
