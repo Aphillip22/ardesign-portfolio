@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../assets/utils/helpers";
 import logoImage from "../../assets/images/wht-logo.svg";
 
+
 function Nav(props) {
   const {
     categories = [],
