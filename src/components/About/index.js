@@ -26,7 +26,7 @@ function About() {
                 My penchant for the arts and digital content writing experience have given me the toolbelt and skillset to design robust web applications.
                 </p>
                 <h3>Certifications:</h3>
-                <ul>
+                <ul style={{fontSize: '15px'}}>
                     <li>Full Stack Web Developer - UofU, UT</li>
                     <li>Personal Trainer - NASM, USA</li>
                     <li>Coach (Gymnastics) - Eagle Gymnastics, NY</li>
