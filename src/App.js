@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Hero from './components/Hero';
+import Resume from './components/Resume';
 
 function App() {
   const [categories] = useState([
@@ -32,6 +33,7 @@ function App() {
           <Hero></Hero>
           <Portfolio currentCategory={currentCategory}></Portfolio>
           <About></About>
+          <Resume></Resume>
         </>
         ) : (
           <ContactForm></ContactForm>
@@ -42,4 +44,3 @@ function App() {
 }
 
 export default App;
-

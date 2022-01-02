@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoList from '../PhotoList';
+import Project from '../Project';
 import { capitalizeFirstLetter } from '../../assets/utils/helpers';
 
 function Portfolio({ currentCategory }) {
@@ -8,7 +8,7 @@ function Portfolio({ currentCategory }) {
     <section>
       <h1 data-testid="h1tag" id={currentCategory.name}>{capitalizeFirstLetter(name)}</h1>
       <p>{description}</p>
-      <PhotoList category={currentCategory.name} />
+      <Project category={currentCategory.name} />
     </section>
   );
 }
