@@ -483,7 +483,8 @@ footer h3 i {
   align-self: center;
   width: 2%;
   margin-left: 50px;
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 .fa-icon {
   font-size: 40px;
@@ -534,7 +535,8 @@ footer h3 i {
     font-size: 15px;
     align-items: flex-start;
   }
-  footer i {
+  footer h3 i {
+    font-size: 10px;
   }
   .hero-art, .hero-img, .hero-code {
       width: 100%;
