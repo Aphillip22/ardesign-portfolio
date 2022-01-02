@@ -36,5 +36,5 @@
   ![image](https://user-images.githubusercontent.com/87291933/147866945-ea084317-b638-4eb1-a0ba-ec8899164f11.png)
 
   # Links
-  Github: https://github.com/Aphillip22/ardesign-portfolio.git
+  Github: https://github.com/Aphillip22/ardesign-portfolio.git  
   Heroku: https://ardesign.herokuapp.com/
