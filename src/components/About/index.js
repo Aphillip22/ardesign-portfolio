@@ -40,10 +40,10 @@ function About() {
                 <img src={logoImage} className="my-2" style={{ width: "100%" }} alt="logo" />
             </div>
             <div className="flex-row about-images" style={{ justifyContent: 'flex-end'}}>
-            <div className="hero-img-btm" style={{ width: "40%" }}>
+            <div className="hero-img-btm">
                 <img src={aboutImage} className="my-2" style={{ width: "90%" }} alt="logo" />
             </div>
-            <div className="hero-img-btm" style={{ width: "40%" }}>
+            <div className="hero-img-btm">
                 <img src={aboutImage2} className="my-2" style={{ width: "90%" }} alt="logo" />
             </div>
             </div>

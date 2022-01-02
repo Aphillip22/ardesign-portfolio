@@ -187,6 +187,9 @@ a {
 .about-images img {
   border-radius: 20px;
 }
+.hero-img-btm {
+  width: 40%;
+}
 .hero-about {
   width: 70%
 }
@@ -475,11 +478,12 @@ footer h3 {
   align-self: center;
   justify-items: right;
 }
-footer i {
+footer h3 i {
   color: var(--primary);
   align-self: center;
   width: 2%;
   margin-left: 50px;
+  margin-right: 10px;
 }
 .fa-icon {
   font-size: 40px;
@@ -491,4 +495,93 @@ footer i {
 /* Footer end */
 .accent-word {
   color:var(--primary);
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+  header h1 {
+      width: 100%;
+      text-align: center;
+  }
+  header nav a {
+    font-size: 20px;
+    padding: 1px;
+    margin: 1px;
+  }
+  header nav ul {
+      width: 100%;
+      justify-content: center;
+  }
+  header nav ul li {
+    font-size: 20px;
+    padding: 1px;
+    margin: 1px;
+}
+  header nav ul li a {
+      font-size: 20px;
+  }
+  footer {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 15%;
+  }
+  footer h3 {
+    font-size: 15px;
+    align-items: flex-start;
+  }
+  footer i {
+  }
+  .hero-art, .hero-img, .hero-code {
+      width: 100%;
+  }
+  .hero-img img{
+    width: 100%;
+    justify-content: flex-end;
+  }
+  img {
+    width: 100%;
+  }
+  .hero-art, .hero-code {
+      text-align: center;
+  }
+  section h1 {
+      width: 80%;
+  }
+  button {
+      justify-content: center;
+  }
+  .resume-card {
+    width: 100%;
+  }
+  .resume-card h3 {
+    width: 100%;
+    align-self:center;
+  }
+  .hero-img-btm {
+    width: 100%;
+  }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+   section {
+       padding: 30px 15px;
+   }
+   h3 {
+       flex: 1 100%;
+       text-align: center;
+   }
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+   section h1 {
+       width: 95%;
+   }
+   .hero-about p {
+       width: 100%;
+   }
 }
