@@ -11,8 +11,6 @@ function About() {
                 <p>
                 Hi! Nice to meet you in this virtual landscape! I'm your resident "Jane-of-all-Trades" and I have a serious addiction to learning new things. 
                 No, really, it's a bit of a problem. I <i className="accent-word">crave</i> knowledge. 
-                I'm not sure if it helps that I have a steel-trap for a brain and an eye for the creative, or if it just makes the situation worse!
-                My yearning for knowledge provided me the privilege to be a part of the ALPS program through middle school and IB program through highschool. 
                 </p>
                 <p>
                 My compulsion to become a woman of erudition has led me to the field of web development, and I absolutely love the endless possibilities.
@@ -21,7 +19,7 @@ function About() {
                 </p>
                 <p>
                 As an artist, I specialize in pencil sketching, though my art mediums are quite diverse. 
-                I currently work full-time in the field of digital marketing and advertising as a Team Lead for an SSO SaaS platform.
+                I currently work full-time in the field of digital marketing and advertising as a Team Lead for an SSO SaaS platform, and recently completed a certification program through the U of U for Full Stack Web Dev.
                 I have published multiple novels as a ghostwriter, requiring me to develop close relationships with clients to harness the voice of the intended author. 
                 My penchant for the arts and digital content writing experience have given me the toolbelt and skillset to design robust web applications.
                 </p>

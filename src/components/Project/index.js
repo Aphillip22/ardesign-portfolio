@@ -55,14 +55,6 @@ const Project = ({ category }) => {
       deployLink: 'https://aphillip22.github.io/weather-dashboard/'
     },
     {
-      name: 'Google Book Search',
-      category: 'portfolio',
-      description:
-          'A MERN stack application providing the ability to search for and save books from Google search API. Technologies include HTML/CSS/JS, Node.js, Express.js, React, MongoDB, bcrypt, JWT',
-      repoLink: 'https://github.com/Aphillip22/book-search-engine.git',
-      deployLink: 'https://aphillip22.github.io/book-search-engine/'
-    },
-    {
       name: 'I Am Woman',
       category: 'artwork',
       description:
