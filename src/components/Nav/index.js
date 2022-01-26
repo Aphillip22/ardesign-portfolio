@@ -1,16 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { capitalizeFirstLetter } from "../../assets/utils/helpers";
 import logoImage from "../../assets/images/wht-logo.svg";
+import { NavLink } from "react-router-dom";
 
 
-function Nav(props) {
+function Navbar(props) {
   const {
     categories = [],
     setCurrentCategory,
     currentCategory,
-    contactSelected,
-    setContactSelected,
   } = props;
+  const tabs = ['About', 'Contact', 'Portfolio', 'Resume'];
+
+ const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
@@ -20,60 +22,30 @@ function Nav(props) {
     <header>
       <img
           src={logoImage}
+          href="/"
           className="my-2 mx-2"
-          style={{ width: "10%" }}
-          alt="cover"
+          style={{ width: "8%" }}
+          alt="logo"
         ></img>
       <nav className="flex-row" style={{ justifyContent: 'flex-end' }}>
-        <ul>
-          <a data-testid="link" href="/">
-            Amber Phillips
-          </a>
-          <li className="mx-2">
+      <ul className="flex-row navLayout">
+        {tabs.map(tab => (
+          <li className="mx-2" key={tab}>
             <a
-              data-testid="about"
-              href="#about"
-              onClick={() => setContactSelected(false)}
+              href={'#' + tab.toLowerCase()}
+              onClick={() => props.handlePageChange(tab)}
+              className={
+              props.currentPage === tab ? 'nav-linkActive' : 'nav-link'
+              }
             >
-              About
+              {tab}
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-2 ${
-                currentCategory.name === category.name &&
-                !contactSelected &&
-                `navActive`
-              }`}
-              key={category.name}
-            ><a href={`#${category.name}`}>
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-              </a>
-            </li>
-          ))}
-          <li className="mx-2">
-            <a
-              data-testid="resume"
-              href="#resume"
-              onClick={() => setContactSelected(false)}
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
+        ))}
+      </ul>
       </nav>
     </header>
   );
 }
 
-export default Nav;
+export default Navbar;

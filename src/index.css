@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Estonia&display=swap");
 
 @font-face {
-  font-family: 'Northwell';
-  src: local('Northwell'), url(./assets/fonts/Northwell.otf) format('opentype');
+  font-family: "Northwell";
+  src: local("Northwell"), url(./assets/fonts/Northwell.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'Artifex';
-  src: local('Artifex'), url(./assets/fonts/Artifex.otf) format('opentype');
+  font-family: "Artifex";
+  src: local("Artifex"), url(./assets/fonts/Artifex.otf) format("opentype");
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Artifex', 'Segoe UI', 'Roboto Condensed', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Artifex", "Segoe UI",
+    "Roboto Condensed", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
 
 :root {
   --primary: #36b3c9;
-  --secondary: #0D2644;
+  --secondary: #0d2644;
   --tertiary: #fafafa;
-  --accent-color: #B12704;
+  --accent-color: #b12704;
   --light: #fff;
   --dark: #000000;
   --darker: #111111;
@@ -52,10 +52,10 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Artifex',
+  font-family: "Artifex";
 }
 
 h1,
@@ -64,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Northwell';
+  font-family: "Northwell";
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -72,7 +72,7 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  color:#B12704;
+  color: #b12704;
   font-weight: bolder;
 }
 
@@ -82,7 +82,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color:#36b3c9;
+  color: #36b3c9;
 }
 
 h4 {
@@ -109,9 +109,9 @@ a {
 }
 /* Hero Style Start */
 .hero {
-  display:flex;
-  align-items:center;
-  justify-content:stretch;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
   margin: auto;
 }
 .hero-art {
@@ -191,12 +191,12 @@ a {
   width: 40%;
 }
 .hero-about {
-  width: 70%
+  width: 70%;
 }
 /* Hero Style End */
 /* Apply styles to header */
 header {
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -204,7 +204,7 @@ header {
   position: sticky;
   top: 0px;
   z-index: 99999;
-  font-family: 'Northwell';
+  font-family: "Northwell";
   color: var(--tertiary);
   font-size: 2.5rem;
   font-weight: lighter;
@@ -214,7 +214,7 @@ header {
 }
 header a {
   color: var(--tertiary);
-  font-family: 'Northwell';
+  font-family: "Northwell";
   font-size: 2.5rem;
   font-weight: lighter;
   text-decoration: none;
@@ -226,7 +226,8 @@ header nav ul {
   align-items: flex-end;
   list-style: none;
 }
-header nav ul li, header nav a {
+header nav ul li,
+header nav a {
   padding: 10px 15px;
 }
 header nav ul li:hover {
@@ -241,6 +242,9 @@ header nav a:hover {
   transform: translateX(10px) scale(1.2);
   transition-timing-function: ease-in-out;
 }
+header nav img {
+  align-items: flex-start;
+}
 /* End header styles */
 /* Resume styles begin */
 .resume h1 {
@@ -253,7 +257,7 @@ header nav a:hover {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -264,7 +268,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -273,12 +277,12 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 form {
@@ -296,7 +300,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 li {
@@ -304,10 +308,10 @@ li {
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid --tertiary;
-	padding: 5px;
+  width: 600px;
+  height: 120px;
+  border: 3px solid --tertiary;
+  padding: 5px;
 }
 
 .container {
@@ -395,29 +399,29 @@ textarea {
 }
 /* Modal styles begin */
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 0;
   right: 0;
   top: 25%;
-	overflow: auto;
-	position: fixed;
-	z-index: 1;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
 }
 .modalTitle {
-	font-size: 40px;
-	font-weight: 400;
-	margin-bottom: 5px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 5px;
   width: 75%;
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 .modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 30px;
-	width: 720px;
+  background: var(--darker);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 30px;
+  width: 720px;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -446,25 +450,25 @@ textarea {
 /* Modal Styles End */
 
 button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: var(--secondary);
-	cursor: pointer;
-  font-family: 'Artifex';
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
+  background: var(--primary);
+  border: 0;
+  border-radius: 5px;
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: "Artifex";
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 /* Footer style start */
 footer {
@@ -478,7 +482,7 @@ footer {
   left: 0;
   width: 100%;
   height: 8%;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 footer h3 {
   width: 50%;
@@ -502,18 +506,18 @@ footer h3 i {
 }
 /* Footer end */
 .accent-word {
-  color:var(--primary);
+  color: var(--primary);
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
   }
   header h1 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
   header nav a {
     font-size: 20px;
@@ -521,22 +525,22 @@ footer h3 i {
     margin: 1px;
   }
   header nav ul {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
   header nav ul li {
     font-size: 20px;
     padding: 1px;
     margin: 1px;
-}
+  }
   header nav ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
   footer {
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 15%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 15%;
   }
   footer h3 {
     font-size: 15px;
@@ -545,31 +549,34 @@ footer h3 i {
   footer h3 i {
     font-size: 10px;
   }
-  .hero-art, .hero-img, .hero-code {
-      width: 100%;
+  .hero-art,
+  .hero-img,
+  .hero-code {
+    width: 100%;
   }
-  .hero-img img{
+  .hero-img img {
     width: 100%;
     justify-content: flex-end;
   }
   img {
     width: 100%;
   }
-  .hero-art, .hero-code {
-      text-align: center;
+  .hero-art,
+  .hero-code {
+    text-align: center;
   }
   section h1 {
-      width: 80%;
+    width: 80%;
   }
   button {
-      justify-content: center;
+    justify-content: center;
   }
   .resume-card {
     width: 100%;
   }
   .resume-card h3 {
     width: 100%;
-    align-self:center;
+    align-self: center;
   }
   .hero-img-btm {
     width: 100%;
@@ -577,20 +584,20 @@ footer h3 i {
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-   section {
-       padding: 30px 15px;
-   }
-   h3 {
-       flex: 1 100%;
-       text-align: center;
-   }
+  section {
+    padding: 30px 15px;
+  }
+  h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-   section h1 {
-       width: 95%;
-   }
-   .hero-about p {
-       width: 100%;
-   }
+  section h1 {
+    width: 95%;
+  }
+  .hero-about p {
+    width: 100%;
+  }
 }

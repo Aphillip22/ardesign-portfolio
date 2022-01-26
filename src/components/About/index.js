@@ -2,10 +2,22 @@ import React from 'react';
 import logoImage from "../../assets/images/clr-logo.svg";
 import aboutImage from "../../assets/images/about-img.jpg";
 import aboutImage2 from '../../assets/images/about-img-2.jpg';
+import coverImage from "../../assets/images/cover-img.jpg";
 
 function About() {
     return (
         <section className="my-5 flex-row hero" id="about">
+            <div className="hero-img" style={{ width: "30%" }}>
+                <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+            </div>
+            <div className="hero-art">
+                <p>splash of</p>
+                <h2><span>&#60;artist&#62;</span></h2>
+            </div>
+            <div className="hero-code">
+                <p>hint of</p>
+                <h2><span>&#60;coder/&#62;</span></h2>
+            </div>
             <div className="hero-about">
                 <h1>About Amber</h1>
                 <p>
